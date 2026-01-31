@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Nithees28/Complete-deployment.git'
+                git branch: 'main',
+                    url: 'https://github.com/Nithees28/Complete-deployment.git'
             }
         }
 
@@ -21,3 +22,4 @@ pipeline {
         }
     }
 }
+
